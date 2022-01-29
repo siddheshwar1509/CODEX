@@ -1,0 +1,8 @@
+1:overlaying menu
+adding logo
+creating loader
+2:navbar
+3:background
+4:contactform
+
+5:parallax

@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/bg1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	height: 170vh;
+	font-style: "Poppins",sans-serif;
+	
+}
+
+.logo{
+	height: 13%;
+	padding: 5px;
+	margin: 0 20px;
+	position: fixed;
+	
+}
+
+
+
+/*--------body---------*/
+
+.container{
+	height: 60vh;
+	width: 30%;
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	top: 55%;
+	left: 32%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+.container1{
+	height: 60vh;
+	width: 30%;
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	top: 55%;
+	left: 70%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+.img{
+	height: 70px;
+	width: 70px;
+	background: url("../images/siddhesh.png")no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.img1{
+	height: 70px;
+	width: 70px;
+	background: url("../images/sameer.png")no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.container h1{
+	color: white;
+	margin-top: 50px;
+}
+.container1 h1{
+	color: white;
+	margin-top: 50px;
+}
+.container p{
+	color: white;
+	margin-top: 40px;
+	font-size: large;
+}
+.container1 p{
+	color: white;
+	margin-top: 40px;
+	font-size: large;
+}
+.btn{
+	background: no-repeat;
+	outline: none;
+	border: 1px solid white;
+	color: white;
+	width: 50%;
+	padding: 7px 15px;
+	font-size: large;
+	cursor: pointer;
+	transition: 0.3s ease;
+	margin-top: 30px;
+}
+.btn:hover{
+	background: white;
+	color: black;
+}
+
+@media only screen and (max-width: 900px)  {
+
+
+.container{
+	height: 60vh;
+	width: 60%;
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+	.container1{
+	height: 60vh;
+	width: 60%;
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+}
+.img{
+	height: 70px;
+	width: 70px;
+	background: url("../images/siddhesh.png")no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+	.img1{
+	height: 70px;
+	width: 70px;
+	background: url("../images/sameer.png")no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50px;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.container h1{
+	color: white;
+	margin-top: 50px;
+}
+	.container1 h1{
+	color: white;
+	margin-top: 50px;
+}
+.container p{
+	color: white;
+	margin-top: 40px;
+	font-size: 15px;
+}
+	.container1 p{
+	color: white;
+	margin-top: 40px;
+	font-size: 15px;
+}
+.btn{
+	background: no-repeat;
+	outline: none;
+	border: 1px solid white;
+	color: white;
+	width: 60%;
+	padding: 7px 10px;
+	font-size: large;
+	cursor: pointer;
+	transition: 0.3s ease;
+	margin-top: 30px;
+	
+}
+.btn:hover{
+	background: white;
+	color: black;
+}
+	.logo{
+		position: absolute;
+	}
+}
+
+/*---------navbar--------*/
+nav{
+	height: 80px;
+	width: 100%;
+	
+	
+}
+
+nav ul{
+	margin: 20px 0;;
+	float: right;
+	margin-right: 50px;
+	
+}
+nav ul li{
+	display: inline-block;
+	line-height: 50px;
+	margin: 0 5px;
+	
+}
+nav ul li a{
+	border: 1px solid white;
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover{
+	width: 100%;
+	visibility: visible;
+	background-color: black;
+	color: white;
+}
+.menu-btn{
+	display: none;
+}
+#active{
+	display: none;
+}
+
+/*------loader-----*/
+
+#loading{
+	width: 100%;
+	position: fixed;
+	height: 100vh;
+	background: white url("../images/Settings.gif")no-repeat center;
+	font-size: 50px;
+	z-index: 99999;
+	
+}
+
+/*-------menu--------*/
+
+@media only screen and (max-width: 900px)  {
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+  position: absolute;
+	z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+}
+.menu-btn{
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  /* left: 20px; */
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  background: black;
+	display: block;
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .menu-btn{
+  background: #fff;
+  color: #4158d0;
+}
+#active:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.wrapper ul li{
+  margin: 15px 0;
+}
+.wrapper ul li a{
+  color: none;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 5px 30px auto;
+  color: #fff;
+  position: relative;
+  line-height: 50px;
+  transition: all 0.3s ease;
+}
+.wrapper ul li a:after{
+  position: absolute;
+  content: "";
+  background: white;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  border-radius: 50px;
+  transform: scaleY(0);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover:after{
+  transform: scaleY(1);
+}
+.wrapper ul li a:hover{
+  color: gray;
+}
+input[type="checkbox"]{
+  display: none;
+}
+}
+
+/*---------footer----*/
+
+/*--footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: darkgray;
+  text-align: center;
+}--*/

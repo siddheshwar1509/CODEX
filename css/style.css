@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	font-style: "Poppins",sans-serif;
+	
+}
+
+
+h1 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Arial";
+  text-transform: uppercase;
+  opacity: .2;
+  font-size: 70px;
+}
+
+.logo{
+	height: 13%;
+	padding: 5px;
+	margin: 0 20px;
+	position: fixed;
+	
+}
+
+/*----para------*/
+
+.para{
+	color: orange;
+	font-size: 50px;
+	font-weight: bold;
+	position: absolute;
+	top: 200px;
+	text-align: center;
+	
+}
+.par{
+	color: white;
+	font-size: 20px;
+	top: 10px;
+	text-align: center;
+	margin: 15px;
+}
+
+/*-----form-----*/
+
+/*------loader-----*/
+
+#loading{
+	width: 100%;
+	position: fixed;
+	height: 100vh;
+	background: white url("../images/Settings.gif")no-repeat center;
+	font-size: 50px;
+	z-index: 99999;
+	
+}
+
+/*---------navbar--------*/
+nav{
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	
+}
+
+nav ul{
+	margin: 20px 0;;
+	float: right;
+	margin-right: 50px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 50px;
+	margin: 0 5px;
+}
+nav ul li a{
+	border: 1px solid white;
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover{
+	width: 100%;
+	visibility: visible;
+	background-color: darkslategray;
+	color: white;
+}
+.menu-btn{
+	display: none;
+}
+#active{
+	display: none;
+}
+
+/*-------menu--------*/
+
+@media only screen and (max-width: 900px)  {
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  z-index: 1;
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+}
+.menu-btn{
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  /* left: 20px; */
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  background: black;
+	display: block;
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .menu-btn{
+  background: #fff;
+  color: #4158d0;
+}
+#active:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.wrapper ul li{
+  margin: 15px 0;
+}
+.wrapper ul li a{
+  color: none;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 5px 100px auto;
+  color: #fff;
+  position: relative;
+  line-height: 50px;
+  transition: all 0.3s ease;
+}
+.wrapper ul li a:after{
+  position: absolute;
+  content: "";
+  background: white;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  border-radius: 50px;
+  transform: scaleY(0);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover:after{
+  transform: scaleY(1);
+}
+.wrapper ul li a:hover{
+  color: gray;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.para{
+		z-index: -1;
+	}
+	/*-----form-----*/
+	
+	
+
+h1 {
+		text-align: center;
+		margin-bottom: 0;
+		margin-top: 60px;
+}
+
+#lean_overlay {
+		position: fixed;
+		z-index: 100;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		background: #000;
+		display: none;
+}
+
+.popupContainer {
+		position: absolute;
+		width: 330px;
+		height: auto;
+		left: 45%;
+		top: 60px;
+		background: #FFF;
+}
+
+#modal_trigger {
+		margin: 40px auto;
+		width: 200px;
+		display: block;
+		border: 1px solid #DDD;
+		border-radius: 4px;
+}
+
+.btn {
+		padding: 10px 20px;
+		background: #F4F4F2;
+}
+
+.btn_red {
+		background: #ED6347;
+		color: #FFF;
+}
+
+.btn:hover {
+		background: #E4E4E2;
+}
+
+.btn_red:hover {
+		background: #C12B05;
+}
+
+a.btn {
+		color: #666;
+		text-align: center;
+		text-decoration: none;
+}
+
+a.btn_red {
+		color: #FFF;
+}
+
+.one_half {
+		width: 50%;
+		display: block;
+		float: left;
+}
+
+.one_half.last {
+		width: 45%;
+		margin-left: 5%;
+}
+/* Popup Styles*/
+
+.popupHeader {
+		font-size: 16px;
+		text-transform: uppercase;
+}
+
+.popupHeader {
+		background: #F4F4F2;
+		position: relative;
+		padding: 10px 20px;
+		border-bottom: 1px solid #DDD;
+		font-weight: bold;
+}
+
+.popupHeader .modal_close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 10px 15px;
+		background: #E4E4E2;
+		cursor: pointer;
+		color: #aaa;
+		font-size: 16px;
+}
+
+.popupBody {
+		padding: 20px;
+}
+/* Social Login Form */
+
+.social_login {}
+
+.social_login .social_box {
+		display: block;
+		clear: both;
+		padding: 10px;
+		margin-bottom: 10px;
+		background: #F4F4F2;
+		overflow: hidden;
+}
+
+.social_login .icon {
+		display: block;
+		width: 10px;
+		padding: 5px 10px;
+		margin-right: 10px;
+		float: left;
+		color: #FFF;
+		font-size: 16px;
+		text-align: center;
+}
+
+.social_login .fb .icon {
+		background: #3B5998;
+}
+
+.social_login .google .icon {
+		background: #DD4B39;
+}
+
+.social_login .icon_title {
+		display: block;
+		padding: 5px 0;
+		float: left;
+		font-weight: bold;
+		font-size: 16px;
+		color: #777;
+}
+
+.social_login .social_box:hover {
+		background: #E4E4E2;
+}
+
+.centeredText {
+		text-align: center;
+		margin: 20px 0;
+		clear: both;
+		overflow: hidden;
+		text-transform: uppercase;
+}
+
+.action_btns {
+		clear: both;
+		overflow: hidden;
+}
+
+.action_btns a {
+		display: block;
+}
+/* User Login Form */
+
+.user_login {
+		display: none;
+}
+
+.user_login label {
+		display: block;
+		margin-bottom: 5px;
+}
+
+.user_login input[type="text"],
+.user_login input[type="email"],
+.user_login input[type="password"] {
+		display: block;
+		width: 90%;
+		padding: 10px;
+		border: 1px solid #DDD;
+		color: #666;
+}
+
+.user_login input[type="checkbox"] {
+		float: left;
+		margin-right: 5px;
+}
+
+.user_login input[type="checkbox"]+label {
+		float: left;
+}
+
+.user_login .checkbox {
+		margin-bottom: 10px;
+		clear: both;
+		overflow: hidden;
+}
+
+.forgot_password {
+		display: block;
+		margin: 20px 0 10px;
+		clear: both;
+		overflow: hidden;
+		text-decoration: none;
+		color: #ED6347;
+}
+/* User Register Form */
+
+.user_register {
+		display: none;
+}
+
+.user_register label {
+		display: block;
+		margin-bottom: 5px;
+}
+
+.user_register input[type="text"],
+.user_register input[type="email"],
+.user_register input[type="password"] {
+		display: block;
+		width: 90%;
+		padding: 10px;
+		border: 1px solid #DDD;
+		color: #666;
+}
+
+.user_register input[type="checkbox"] {
+		float: left;
+		margin-right: 5px;
+}
+
+.user_register input[type="checkbox"]+label {
+		float: left;
+}
+
+.user_register .checkbox {
+		margin-bottom: 10px;
+		clear: both;
+		overflow: hidden;
+}
+
+
+
+/*---------footer----*/
+
+/*---footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: darkgray;
+  text-align: center;
+}--*/
